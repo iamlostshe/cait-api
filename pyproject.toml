@@ -1,27 +1,18 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [project]
-name = "conversations_about_important_api"
-version = "0.1.0"
-
+name = "cait-api"
+version = "0.1.2"
 authors = [
     { name = "iamlostshe", email = "vanamelcikov7275@gmail.com" },
 ]
 maintainers = [
     { name = "iamlostshe", email = "vanamelcikov7275@gmail.com" },
 ]
-
 license = "MIT"
-
 readme = "README.md"
-
 dependencies = [
-    "curl_cffi",
-    "lxml"
+    "aiohttp>=3.12.15",
+    "lxml>=6.0.1",
 ]
-
 keywords = [
     "pars",
     "parsing",
@@ -30,9 +21,7 @@ keywords = [
     "wrapper",
     "asyncio",
 ]
-
 classifiers = [
-    "License :: OSI Approved :: MIT License",
     "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
     "Typing :: Typed",
@@ -46,12 +35,11 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-
-# requires-python = ">=3.9"
+requires-python = ">=3.9"
 
 [project.urls]
-Homepage = "https://github.com/iamlostshe/conversations-about-important-api"
-Issues = "https://github.com/iamlostshe/conversations-about-important-api/issues"
+Homepage = "https://github.com/iamlostshe/cait-api"
+Issues = "https://github.com/iamlostshe/cait-api/issues"
 
 [tool.ruff.lint]
 select = ["ALL"]
